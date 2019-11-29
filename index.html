@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-153393067-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-153393067-1");
+		</script>
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -18,14 +33,19 @@
 
 	<body>
 		<header class="frontpage">
+			<div>
+				<!-- this div is for formatting reasons! -->
+			</div>
 			<div class="about">
 				<h1>Hi I'm Edward. Hows it going?</h1>
 
 				<div class="profile-image">
-					<img src="http://edwardwilliams.me/images/edward.jpg" alt="" />
+					<img src="./images/edward.jpg" alt="" />
 				</div>
 				<h2>Front-End Developer</h2>
 				<h3>Connecting users to your content!</h3>
+			</div>
+			<div class="about-bottom">
 				<div class="about-content">
 					<p>
 						I <em>really</em> appreciate your visit! I love learning and want to
@@ -39,7 +59,7 @@
 		<main>
 			<h2>Recent Projects</h2>
 			<div class="recent">
-				<div class="project-card">
+				<!-- <div class="project-card">
 					<div class="project-title">eSign-In Web-App</div>
 					<div class="project-img"></div>
 					<div class="project-content">
@@ -48,8 +68,13 @@
 						admin backend at my desk. From there I can quickly input their data
 						into the necessary district application to rectify the issue.
 					</div>
-					<div class="project-tech">HTML/CSS | Vanilla Javascript | Firebase</div>
-					<div class="project-links"><button>Source</button> <button>Kiosk</button> <button>Admin Side</button></div>
+					<div class="project-tech">
+						HTML/CSS | Vanilla Javascript | Firebase
+					</div>
+					<div class="project-links">
+						<button>Source</button> <button>Kiosk</button>
+						<button>Admin Side</button>
+					</div>
 				</div>
 				<div class="project-card">
 					<div class="project-title">Rick and Morty Soundboard</div>
@@ -61,23 +86,40 @@
 					</div>
 					<div class="project-tech">HTML/CSS | Vanilla Javascript</div>
 					<div class="project-links">Links</div>
-				</div>
+				</div> -->
 				<div class="project-card">
-					<div class="project-title">SpaceX API</div>
-					<div class="project-img">Image</div>
+					<div class="project-title">SpaceX Website</div>
+					<div class="project-img"></div>
 					<div class="project-content">
-						<p>A quick site that demonstrates my ability to build a complete multipage website from a web API. 
-						For the UI, I wanted to look at SpaceX's sister site, Tesla, for inspiration. </p>
-						<p>To help build this site quickly and easily, I utilized VUE.js. This made displaying and filtering data from the SpaceX 
-							API a pleasure!
+						<p>
+							A quick site that demonstrates my ability to build a complete
+							multipage website from a web API. For the UI, I wanted to look at
+							SpaceX's sister site, Tesla, for inspiration.
+						</p>
+						<p>
+							To help build this site quickly and easily, I utilized VUE.js.
+							This made displaying and filtering data from the SpaceX API a
+							pleasure!
 						</p>
 					</div>
 					<div class="project-tech">HTML/CSS | Vue.js | SpaceX API</div>
-					<div class="project-links">Links</div>
+					<div class="project-links">
+						<a href="http://spacexdb.com" target="_blank"
+							><button>Live</button></a
+						>
+						<a href="http://github.com/nerfsmurf13/spacex_vue" target="_blank"
+							><button>Source</button></a
+						>
+						<a
+							href="https://docs.spacexdata.com/?version=latest"
+							target="_blank"
+							><button>API</button></a
+						>
+					</div>
 				</div>
 			</div>
 		</main>
-		<section class="contact">
+		<!-- <section class="contact">
 			<form action="https://formspree.io/mvoolybq" method="POST">
 				<input type="text" name="name" />
 				<input type="email" name="_replyto" />
@@ -85,7 +127,20 @@
 				<input type="textarea" name="message" />
 				<input type="submit" value="Send" />
 			</form>
-		</section>
-		<footer>Simplicity & Functionality</footer>
+		</section> -->
+		<footer>
+			<div>Simplicity & Functionality</div>
+			<div>
+				<a href="https://github.com/nerfsmurf13"
+					><img
+						class="whitebg"
+						src="./images/github_logo.png"
+						alt="Edward's GitHub"
+				/></a>
+				<a href="https://www.linkedin.com/in/edwardalexanderwilliams/"
+					><img src="./images/linkedin_logo.png" alt="Edward's Linked In"
+				/></a>
+			</div>
+		</footer>
 	</body>
 </html>
