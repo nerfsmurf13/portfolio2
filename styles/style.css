@@ -14,12 +14,12 @@
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 h2,
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 body {
@@ -54,7 +54,7 @@ header {
   -webkit-box-pack: justify;
           justify-content: space-between;
   -ms-flex-pack: space-between;
-  background-image: url("../images/dallas_bg.png");
+  background-image: url("../images/dallas_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,8 +65,8 @@ header {
 
 header .about-content {
   z-index: 5;
-  padding: 3rem;
-  font-size: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
   font-weight: 100;
   background-color: #0274b3;
   color: #fff;
@@ -76,11 +76,11 @@ header .about-content {
 
 header .about p {
   z-index: 5;
-  padding: 3rem 3rem;
+  padding: 1rem;
 }
 
 header .about {
-  padding: 2rem;
+  padding: 1rem;
   height: 100%;
 }
 
@@ -104,7 +104,7 @@ main {
 
 main h2 {
   color: #000;
-  padding-top: 2rem;
+  padding: 1rem 0;
 }
 
 main .recent {
@@ -114,8 +114,9 @@ main .recent {
   padding: 0 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .project-card {
@@ -124,7 +125,8 @@ main .project-card {
           flex-grow: 1;
   max-width: 400px;
   min-width: 100px;
-  margin: 2rem 2rem;
+  margin: 0 .75rem;
+  margin-bottom: 2rem;
   border-radius: 1rem;
   overflow: hidden;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -142,12 +144,12 @@ main .project-card {
 main .project-card .project-title {
   background-color: #FFBA00;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 main .project-card .project-content {
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -185,20 +187,101 @@ main .project-card button:hover {
 }
 
 .contact {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.contact-header {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.contact-form-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form-form input,
+.contact-form-form textarea {
+  width: 100%;
+  border: none;
+  margin-bottom: .6rem;
+  text-align: center;
+  border-radius: .5rem;
+  padding: .5rem;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contact-form-form button {
+  cursor: pointer;
+  padding: .5rem;
+  background-color: white;
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #D97600;
+  width: 100px;
+}
+
+.contact-form-form button:hover {
+  background-color: #D97600;
+  border: 2px solid white;
+  color: white;
 }
 
 footer {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
-  font-weight: 400;
-  padding: 2rem;
+  font-weight: 800;
+  padding: .5rem;
   background-color: #D97600;
 }
 
 footer img {
-  height: 60px;
+  height: 30px;
 }
 
 footer .whitebg {
@@ -208,5 +291,31 @@ footer .whitebg {
 
 footer div {
   margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2,
+  h3 {
+    font-size: 3rem;
+  }
+  header .about-content {
+    font-size: 2rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+  footer img {
+    height: 60px;
+  }
+  .contact-header {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .contact-form-form {
+    width: 500px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
